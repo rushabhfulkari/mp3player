@@ -1,0 +1,53 @@
+name: mp3player
+description: "An assignment project for Thence Senior Flutter Developer Position."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  flutter_bloc: ^8.1.6
+  get_it: ^8.0.1
+  dartz: ^0.10.1
+  http: ^1.2.2
+  equatable: ^2.0.5
+  path_provider: ^2.1.4
+  just_audio: ^0.9.41
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.1
+
+# dart run flutter_launcher_icons:generate
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/jsons/
+    - assets/icon/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
